@@ -3,13 +3,11 @@
 	"name": "akniet",
 	"main": "./dist/index.js",
 	"compatibility_date": "2025-12-20",
-	"compatibility_flags": [
-		"nodejs_compat"
-	],
-"vars": {
-		"API_BASE": "https://my-rust-backend.domainswiki.workers.dev/",
+	"compatibility_flags": ["nodejs_compat"],
+	"vars": {
+		"API_BASE": "https://my-rust-backend.domainswiki.workers.dev",
 	},
-/* 		"routes": [
+	/* 		"routes": [
 		{
 			"pattern": "tabys-go.ru",
 			"custom_domain": true
@@ -26,7 +24,7 @@
 		{
 			"binding": "akniet_db",
 			"database_name": "akniet_db",
-			"id": "185361c8-e119-4c2a-833c-748b7e953618",
+			"database_id": "185361c8-e119-4c2a-833c-748b7e953618",
 		},
 	],
 	"r2_buckets": [
@@ -37,8 +35,7 @@
 		{
 			"bucket_name": "akniet-images",
 			"binding": "akniet_images",
-			"remote": true
+			"remote": true,
 		},
 	],
 }
-
