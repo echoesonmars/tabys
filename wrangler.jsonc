@@ -1,15 +1,20 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "akniet",
+	"name": "tabys",
 	"main": "./dist/index.js",
 	"compatibility_date": "2025-12-20",
+<<<<<<< HEAD
 	"compatibility_flags": [
 		"nodejs_compat"
 	],
 "vars": {
+=======
+	"compatibility_flags": ["nodejs_compat"],
+	"vars": {
+>>>>>>> c96a55ccbdaab52a0f91405e7b1e87890422a55a
 		"API_BASE": "https://my-rust-backend.domainswiki.workers.dev",
 	},
-/* 		"routes": [
+	/* 		"routes": [
 		{
 			"pattern": "tabys-go.ru",
 			"custom_domain": true
@@ -37,8 +42,7 @@
 		{
 			"bucket_name": "akniet-images",
 			"binding": "akniet_images",
-			"remote": true
+			"remote": true,
 		},
 	],
 }
-
