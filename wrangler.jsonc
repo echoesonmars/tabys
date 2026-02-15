@@ -6,10 +6,10 @@
 	"compatibility_flags": [
 		"nodejs_compat"
 	],
-/* 	"vars": {
-		"API_BASE": "https://api.tabys-go.ru",
+"vars": {
+		"API_BASE": "https://my-rust-backend.domainswiki.workers.dev/",
 	},
-	"routes": [
+/* 		"routes": [
 		{
 			"pattern": "tabys-go.ru",
 			"custom_domain": true
