@@ -25,7 +25,7 @@
 	"d1_databases": [
 		{
 			"binding": "akniet_db",
-			"database_name": "akniet-db",
+			"database_name": "akniet_db",
 			"id": "185361c8-e119-4c2a-833c-748b7e953618",
 		},
 	],
@@ -41,3 +41,5 @@
 		},
 	],
 }
+/* 
+dM0NQRBNwXGSd-IOMu_BxOIjVnkHRQgCtgoaY94- */
