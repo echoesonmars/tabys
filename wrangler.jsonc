@@ -1,6 +1,6 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "akniet",
+	"name": "tabys",
 	"main": "./dist/index.js",
 	"compatibility_date": "2025-12-20",
 	"compatibility_flags": ["nodejs_compat"],
