@@ -1,0 +1,30 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "tabys",
+	"main": "./dist/index.js",
+	"compatibility_date": "2025-12-20",
+	"compatibility_flags": ["nodejs_compat"],
+	"vars": {
+		"API_BASE": "https://api.tabys-go.ru",
+	},
+	"routes": [
+		{ "pattern": "tabys-go.ru", "custom_domain": true },
+		{ "pattern": "www.tabys-go.ru", "custom_domain": true },
+	],
+	"assets": {
+		"directory": "./dist",
+	},
+	"d1_databases": [
+		{
+			"binding": "tabys_db",
+			"database_name": "tabys-db",
+			"database_id": "id от базы",
+		},
+	],
+	"r2_buckets": [
+		{
+			"binding": "tabys_bucket",
+			"bucket_name": "tabys-images",
+		},
+	],
+}
