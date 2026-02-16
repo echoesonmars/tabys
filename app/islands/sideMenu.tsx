@@ -173,7 +173,7 @@ export default function CategoryMenu({
 
 				<div className="shrink-0 p-6 text-center">
 					<p className="text-[8px] font-black text-gray-300 uppercase tracking-[0.4em]">
-						Tabys-Go 2026
+						Akniet shop 2026
 					</p>
 				</div>
 			</div>
