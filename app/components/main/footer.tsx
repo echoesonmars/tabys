@@ -43,7 +43,7 @@ export const Footer = ({ currentLang }: { currentLang: string }) => {
 
 					<div className="flex items-center gap-2">
 						<a
-							href="tel:+77013518594"
+							href="tel:+7771 440 08 38"
 							className="text-xs md:text-base font-black text-gray-900 tracking-tighter whitespace-nowrap">
 							+7 771 440 08 38
 						</a>
@@ -70,7 +70,7 @@ export const Footer = ({ currentLang }: { currentLang: string }) => {
 					</a>
 
 					<div className="text-[8px] font-bold text-gray-300 uppercase tracking-[0.1em] leading-none whitespace-nowrap">
-						© 2026 ТАБЫСGO.{' '}
+						© 2026 Akniet shop.{' '}
 						{isKk
 							? 'БАРЛЫҚ ҚҰҚЫҚТАР ҚОРҒАЛҒАН'
 							: 'ВСЕ ПРАВА ЗАЩИЩЕНЫ'}
