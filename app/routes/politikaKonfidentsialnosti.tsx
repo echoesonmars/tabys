@@ -19,9 +19,9 @@ type Section = { h: string; blocks: SectionBlock[] };
 
 type Content = { title: string; sections: Section[] };
 
-const WEBSITE = 'https://www.tabys-go.ru/';
-const POLICY_URL = 'https://www.tabys-go.ru/politikaKonfidentsialnosti/';
-const EMAIL = 'info.tabystest@gmail.com';
+const WEBSITE = 'https://www.akniet-shop/';
+const POLICY_URL = 'https://www.akniet-shop/politikaKonfidentsialnosti/';
+const EMAIL = 'info.akniet-shop@gmail.com';
 
 const ru: Content = {
 	title: 'Политика в отношении обработки персональных данных',
@@ -31,7 +31,7 @@ const ru: Content = {
 			blocks: [
 				{
 					type: 'p',
-					text: 'Настоящая политика обработки персональных данных определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые ИП "Табыс" (далее — Оператор).',
+					text: 'Настоящая политика обработки персональных данных определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые ИП "Akniet-shop" (далее — Оператор).',
 				},
 				{
 					type: 'list',
@@ -444,7 +444,7 @@ const kk: Content = {
 			blocks: [
 				{
 					type: 'p',
-					text: 'Осы дербес деректерді өңдеу саясаты дербес деректерді өңдеу тәртібін және дербес деректердің қауіпсіздігін қамтамасыз ету жөніндегі шараларды, оларды ЖК "Табыс"  (бұдан әрі — Оператор) қабылдайтынын айқындайды.',
+					text: 'Осы дербес деректерді өңдеу саясаты дербес деректерді өңдеу тәртібін және дербес деректердің қауіпсіздігін қамтамасыз ету жөніндегі шараларды, оларды ЖК "Akniet-shop"  (бұдан әрі — Оператор) қабылдайтынын айқындайды.',
 				},
 				{
 					type: 'list',
