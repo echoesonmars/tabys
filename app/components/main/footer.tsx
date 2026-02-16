@@ -8,10 +8,21 @@ export const Footer = ({ currentLang }: { currentLang: string }) => {
 			<div className="max-w-6xl mx-auto">
 				<div className="flex flex-row items-center justify-between gap-4 pb-4">
 					<div className="flex flex-col text-left">
-						<div className="text-xl md:text-2xl font-black tracking-tighter uppercase leading-none text-gray-900">
-							ТАБЫС
-							<span className="text-green-600 italic">Go</span>
+						<div className="flex flex-col justify-center">
+							<div className="flex items-end leading-none">
+								<span className="text-2xl md:text-3xl font-black text-gray-900 tracking-tighter uppercase">
+									Akniet
+								</span>
+								<span className="text-base md:text-lg font-black text-green-600 ml-0.5 tracking-tighter italic mb-[1px] group-hover:translate-x-1 transition-transform">
+									SHOP
+								</span>
+							</div>
+
+							<span className="text-[7px] md:text-[9px] font-medium text-gray-400 uppercase tracking-[0.4em] leading-none mt-2 pl-0.5 border-t border-gray-100 pt-1">
+								Шағын Market
+							</span>
 						</div>
+
 						<span className="text-[8px] md:text-[10px] text-gray-400 font-bold uppercase tracking-[0.2em] mt-1 whitespace-nowrap">
 							09:00 — 21:00
 						</span>
@@ -34,10 +45,10 @@ export const Footer = ({ currentLang }: { currentLang: string }) => {
 						<a
 							href="tel:+77013518594"
 							className="text-xs md:text-base font-black text-gray-900 tracking-tighter whitespace-nowrap">
-							+7 701 351 85 94
+							+7 771 440 08 38
 						</a>
 						<a
-							href="https://wa.me"
+							href="https://wa.me/77714400838"
 							className="bg-green-50 text-green-600 p-2 rounded-lg">
 							<svg
 								className="w-4 h-4"

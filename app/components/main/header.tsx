@@ -32,10 +32,10 @@ export const Header = ({
 						<div className="flex flex-col justify-center">
 							<div className="flex items-end leading-none">
 								<span className="text-2xl md:text-3xl font-black text-gray-900 tracking-tighter uppercase">
-									ТАБЫС
+									Akniet
 								</span>
 								<span className="text-base md:text-lg font-black text-green-600 ml-0.5 tracking-tighter italic mb-[1px] group-hover:translate-x-1 transition-transform">
-									Go
+									SHOP
 								</span>
 							</div>
 
