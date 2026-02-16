@@ -18,7 +18,7 @@ export default createRoute(async (c) => {
 	const searchQuery = c.req.query('q');
 
 	const env = c.env as unknown as { API_BASE: string };
-	const API_BASE = c.env.API_BASE;
+	const API_BASE = env.API_BASE;
 
 	const productUrl = new URL(`${API_BASE}/api/products`);
 	if (selectedCategoryIdParam)
