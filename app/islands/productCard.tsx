@@ -3,7 +3,7 @@ import { useState, useEffect } from 'hono/jsx';
 import { getDisplayUnit, parseImages } from '../utils/helpers';
 import { i18n } from '../i18n';
 import Counter from './counter';
-import ProductModal from '../components/product/productModal';
+import ProductModal from './productModal';
 
 export default function ProductCard({
 	product,
