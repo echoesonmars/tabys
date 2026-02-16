@@ -11,15 +11,15 @@ export const HeaderPolicy = ({ lang }: { lang: 'ru' | 'kk' }) => {
 					className="flex items-center gap-3 shrink-0 group transition-transform active:scale-95">
 					<div className="flex flex-col justify-center">
 						<div className="flex items-end leading-none">
-							<span className="text-2xl font-black text-gray-900 tracking-tighter uppercase">
-								ТАБЫС
+							<span className="text-2xl md:text-3xl font-black text-gray-900 tracking-tighter uppercase">
+								Akniet
 							</span>
-							<span className="text-base font-black text-green-600 ml-0.5 tracking-tighter italic mb-[1px] group-hover:translate-x-1 transition-transform">
-								Go
+							<span className="text-base md:text-lg font-black text-green-600 ml-0.5 tracking-tighter italic mb-[1px] group-hover:translate-x-1 transition-transform">
+								SHOP
 							</span>
 						</div>
 
-						<span className="text-[7px] font-medium text-gray-400 uppercase tracking-[0.4em] leading-none mt-2 pl-0.5 border-t border-gray-100 pt-1">
+						<span className="text-[7px] md:text-[9px] font-medium text-gray-400 uppercase tracking-[0.4em] leading-none mt-2 pl-0.5 border-t border-gray-100 pt-1">
 							Шағын Market
 						</span>
 					</div>
