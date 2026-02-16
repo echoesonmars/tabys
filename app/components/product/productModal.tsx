@@ -20,12 +20,10 @@ export default function ProductModal({
 	t,
 }: any) {
 	if (!isOpen) return null;
-
 	// Логика свайпа закрытия вниз
 	const [touchStart, setTouchStart] = useState(0);
 	const [translateY, setTranslateY] = useState(0);
 	const scrollRef = useRef<HTMLDivElement>(null);
-
 	const handleTouchStart = (e: any) => setTouchStart(e.touches.clientY);
 	const handleTouchMove = (e: any) => {
 		const diff = e.touches.clientY - touchStart;
@@ -35,7 +33,6 @@ export default function ProductModal({
 		if (translateY > 120) onClose();
 		setTranslateY(0);
 	};
-
 	// Обновление точек при свайпе фото
 	const handleScroll = (e: any) => {
 		const index = Math.round(e.target.scrollLeft / e.target.offsetWidth);
@@ -54,7 +51,7 @@ export default function ProductModal({
 				className="relative bg-white w-full max-w-lg rounded-t-[2.5rem] sm:rounded-[2.5rem] shadow-2xl h-[88vh] sm:h-auto sm:max-h-[90vh] flex flex-col overflow-hidden transition-transform duration-200 ease-out"
 				style={{ transform: `translateY(${translateY}px)` }}>
 				<div
-					className="h-8 w-full flex items-center justify-center shrink-0 cursor-grab active:cursor-grabbing z-50"
+					className="h-7 w-full flex items-center justify-center shrink-0 cursor-grab active:cursor-grabbing z-50"
 					onTouchStart={handleTouchStart}
 					onTouchMove={handleTouchMove}
 					onTouchEnd={handleTouchEnd}>
@@ -79,7 +76,7 @@ export default function ProductModal({
 				</button>
 
 				<div className="flex-1 overflow-y-auto no-scrollbar pt-0">
-					{/* Слайдер фотографий */}
+					{/* Слайдер: Ограничили высоту до 35vh, чтобы описание "подпрыгнуло" вверх */}
 					<div className="relative">
 						<div
 							onScroll={handleScroll}
@@ -87,10 +84,10 @@ export default function ProductModal({
 							{images.map((img: string, idx: number) => (
 								<div
 									key={idx}
-									className="w-full shrink-0 snap-center flex items-center justify-center aspect-square p-6">
+									className="w-full shrink-0 snap-center flex items-center justify-center h-[35vh] sm:h-[40vh] p-4">
 									<img
 										src={img}
-										className="max-w-full max-h-full object-contain pointer-events-none"
+										className="w-full h-full object-contain pointer-events-none"
 										draggable={false}
 									/>
 								</div>
@@ -98,7 +95,7 @@ export default function ProductModal({
 						</div>
 
 						{images.length > 1 && (
-							<div className="absolute bottom-4 left-0 right-0 flex justify-center gap-1.5 pointer-events-none">
+							<div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5 pointer-events-none">
 								{images.map((_: any, idx: number) => (
 									<div
 										key={idx}
@@ -109,18 +106,17 @@ export default function ProductModal({
 						)}
 					</div>
 
-					{/* Текстовая информация */}
-					<div className="px-6 pb-44">
+					<div className="px-6 pb-48 pt-2">
 						<span className="text-green-600 font-bold text-[10px] uppercase tracking-[0.2em] block mb-1">
 							{displayCategory}
 						</span>
-						<h2 className="text-2xl font-black text-gray-900 leading-tight mb-6">
+						<h2 className="text-2xl font-black text-gray-900 leading-tight mb-4">
 							{displayName}
 						</h2>
 
-						<div className="h-px bg-gray-50 w-full mb-6" />
+						<div className="h-px bg-gray-50 w-full mb-5" />
 
-						<div className="space-y-3">
+						<div className="space-y-2">
 							<p className="text-gray-400 text-[10px] font-bold uppercase tracking-widest">
 								Описание
 							</p>
@@ -133,10 +129,10 @@ export default function ProductModal({
 					</div>
 				</div>
 
-				{/* Нижняя панель: Цена/Юнит и Каунтер */}
-				<div className="absolute bottom-0 left-0 right-0 bg-white/90 backdrop-blur-xl border-t border-gray-100 p-6 flex items-center justify-between gap-4 shadow-[0_-15px_30px_rgba(0,0,0,0.03)] pb-[calc(1.5rem+env(safe-area-inset-bottom))] z-50">
+				{/* Нижняя панель */}
+				<div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-xl border-t border-gray-100 p-6 flex items-center justify-between gap-4 shadow-[0_-15px_30px_rgba(0,0,0,0.03)] pb-[calc(1.5rem+env(safe-area-inset-bottom))] z-50">
 					<div className="flex flex-col">
-						<span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-1">
+						<span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-0.5">
 							{quantity > 0 ? t.totalLabel : 'Цена'}
 						</span>
 						<div className="flex items-baseline font-black text-gray-900 tracking-tighter">
