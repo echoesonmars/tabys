@@ -200,7 +200,7 @@ export default function CheckoutIsland({
 				);
 				localStorage.removeItem('cart');
 				window.dispatchEvent(new Event('cart-updated'));
-				window.location.href = `whatsapp://send?phone=7018566284&text=${waMessage}`;
+				window.location.href = `whatsapp://send?phone=7014400838&text=${waMessage}`;
 
 				setTimeout(() => {
 					window.location.href = lang === 'kk' ? '/?lang=kk' : '/';
